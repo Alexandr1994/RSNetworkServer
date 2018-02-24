@@ -326,7 +326,7 @@ extern "C" {
 	extern OWEN_EXPORT int OWEN_STDCALL WriteStoredDotS(unsigned long address, unsigned long addressType, char *parameterName, float value, int index);
 	extern OWEN_EXPORT int OWEN_STDCALL ReadStoredDotU(unsigned long address, unsigned long addressType, char *parameterName, float& value, int index);
 	extern OWEN_EXPORT int OWEN_STDCALL WriteIEEE32(unsigned long address,unsigned long addressType,char *parameterName,float value, int index);
-	extern OWEN_EXPORT int OWEN_STDCALL ReadIEEE32(unsigned long, unsigned long, char *parameterName, float&, int& value, int index);
+	extern OWEN_EXPORT int OWEN_STDCALL ReadIEEE32(unsigned long, unsigned long, char *parameterName, float& value, int& time, int index);
 	extern OWEN_EXPORT int OWEN_STDCALL ReadPkpBCD(unsigned long, unsigned long, char *parameterName, float& value);
 	extern OWEN_EXPORT int OWEN_STDCALL WriteCSET(unsigned long address, unsigned long addressType, int prc);
 	extern OWEN_EXPORT int OWEN_STDCALL ReadDTMR(unsigned long address,unsigned long addressType,int &hrs,int &mins,int &sec,int &msec);
